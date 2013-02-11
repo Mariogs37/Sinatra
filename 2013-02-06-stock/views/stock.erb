@@ -1,0 +1,14 @@
+<section id = "input">
+
+  <header>Get a Live Stock Quote!</header>
+
+  <form action='/stock' method='get'>
+    <input type = "text" name = "name">
+    <button>What's it worth?</button>
+  </form>
+</section>
+
+<section id = "result">
+  <p>Symbol: <%= @name %></p>
+  <p>Price: $<%= @price %> per share!</p>
+</section>
